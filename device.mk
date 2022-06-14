@@ -16,6 +16,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/spes/spes-vendor.mk)
 
+# Inherit the Pixel Launcher Mod
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+
 # Enable Dynamic partition
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
