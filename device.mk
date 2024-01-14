@@ -489,6 +489,10 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     libsensorndkbridge
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
