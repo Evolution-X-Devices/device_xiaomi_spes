@@ -240,3 +240,7 @@ on property:ro.boot.hwversion=*
 
 on property:vendor.fps_hal.restartimes=max
     stop vendor.fps_hal
+
+on property:sys.boot_completed=1
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
