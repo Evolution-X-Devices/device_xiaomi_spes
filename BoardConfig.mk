@@ -255,7 +255,6 @@ TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
-NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk
