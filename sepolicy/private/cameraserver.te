@@ -1,4 +1,5 @@
 allow cameraserver property_socket:sock_file write;
 allow cameraserver vendor_sys_video_prop:file { read open getattr };
 allow cameraserver init:unix_stream_socket connectto;
+allow cameraserver vendor_sys_video_prop:file { read open getattr };
 set_prop(cameraserver, exported_system_prop);
