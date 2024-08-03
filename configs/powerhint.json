@@ -116,15 +116,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
-      "Values": [
-        "5",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count",
       "Values": [
@@ -217,15 +208,6 @@
       "HoldFd": true
     },
     {
-      "Name": "EnergyAware",
-      "Path": "/proc/sys/kernel/sched_energy_aware",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -298,12 +280,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "5"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 0,
       "Value": "0"
@@ -325,12 +301,6 @@
       "Node": "CPUBWMinFreq",
       "Duration": 0,
       "Value": "7759"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "EnergyAware",
-      "Duration": 3000,
-      "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
@@ -406,12 +376,6 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
-      "Node": "EnergyAware",
-      "Duration": 1000,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
       "Value": "2400000"
@@ -529,12 +493,6 @@
       "Node": "CPUBWIOPercent",
       "Duration": 0,
       "Value": "80"
-    },
-    {
-      "PowerHint": "CAMERA_SHOT",
-      "Node": "EnergyAware",
-      "Duration": 1000,
-      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_SHOT",
