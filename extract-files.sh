@@ -14,7 +14,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ANDROID_ROOT="${MY_DIR}"/../../..
+ANDROID_ROOT="${MY_DIR}/../../.."
+
+export TARGET_ENABLE_CHECKELF=false
 
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
@@ -52,9 +54,11 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
+            [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "13 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
+            [ "$2" = "" ] && return 0
             llvm-strip --strip-debug  "${2}"
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
