@@ -573,3 +573,10 @@ $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 # Remove unnecessary system apps (e.g., AudioFX)
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Refreshrate
+PRODUCT_PACKAGES += \
+    RefreshRateParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/refreshrate/privapp-permissions-refresh-rate-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-refresh-rate-parts.xml

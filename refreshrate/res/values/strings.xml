@@ -1,0 +1,12 @@
+<resources>
+    <!-- Add other string resources here -->
+
+    <!-- Add the missing string resources -->
+    <!-- Refresh Rate  -->
+    <string name="refresh_title">Refresh rate per-app</string>
+    <string name="refresh_summary">Set a specific refresh rate for each application</string>
+    <string name="refresh_rate_tile_title">Refresh Rate</string>
+    <string name="refresh_medium">(60 Hz)</string>
+    <string name="refresh_high">(90 Hz)</string>
+    <string name="refresh_default">(60/90 Hz)</string>
+</resources>
