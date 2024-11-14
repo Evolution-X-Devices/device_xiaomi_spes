@@ -138,6 +138,9 @@ on boot
     chown system system /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/single_tap_pressed
     chmod 0660 /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/single_tap_pressed
 
+   # Enable modernized tap to wake
+    write /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/fts_gesture_mode 1
+
     # USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
