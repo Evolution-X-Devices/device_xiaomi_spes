@@ -58,3 +58,13 @@ ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # Disable RescueParty due to high risk of data loss
 persist.sys.disable_rescue=true
+
+# Battery Saving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
