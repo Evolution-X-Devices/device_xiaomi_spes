@@ -1,3 +1,6 @@
+# Custom Crdroid
+ro.crdroid.maintainer=тαиνir
+
 # Audio
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
