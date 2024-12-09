@@ -60,7 +60,7 @@ on property:sys.boot_completed=1
     write /dev/stune/top-app/schedtune.boost 10
 
     # Setup ZRAM
-    write /proc/sys/vm/swappiness 100
+    write /proc/sys/vm/swappiness 60
 
     # Setup runtime blkio
     # value for group_idle is us
