@@ -6,7 +6,7 @@ END="\033[0m"
 
 VENDOR_BRANCH="15.0"
 KERNEL_BRANCH="NaughtySilver"
-HARDWARE_BRANCH="lineage-22.0"
+HARDWARE_BRANCH="15.0"
 DEBUG_BRANCH="lineage-22"
 LEICA_CAMERA_BRANCH="leica-5.0"
 
@@ -45,8 +45,8 @@ if check_dir kernel/xiaomi/sm6225; then
 fi
 
 if check_dir hardware/xiaomi; then
-    echo -e "${GREEN}Cloning hardware sources from LineageOS (branch: ${YELLOW}$HARDWARE_BRANCH${GREEN})...${END}"
-    git clone https://github.com/LineageOS/android_hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
+    echo -e "${GREEN}Cloning hardware sources from spes-development (branch: ${YELLOW}$HARDWARE_BRANCH${GREEN})...${END}"
+    git clone https://github.com/spes-development/hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
 fi
 
 if check_dir hardware/samsung-ext/interfaces; then
