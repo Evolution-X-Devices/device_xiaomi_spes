@@ -23,9 +23,6 @@ echo -e "${YELLOW}Applying patches and cloning device source...${END}"
 echo -e "${GREEN}• Removing conflicting Pixel headers from hardware/google/pixel/kernel_headers/Android.bp...${END}"
 rm -rf hardware/google/pixel/kernel_headers/Android.bp
 
-echo -e "${GREEN}• Removing conflicting LineageOS compat module from hardware/lineage/compat/Android.bp...${END}"
-rm -rf hardware/lineage/compat/Android.bp
-
 if [ -f device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/legacy-ims/hal_rcsservice.te ]; then
     echo -e "${GREEN}Switching back to legacy imsrcsd sepolicy...${END}"
     rm -rf device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/imsservice.te
