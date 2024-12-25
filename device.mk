@@ -559,3 +559,7 @@ $(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
 # Include Leica//Miui Camera
 $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
+# Remove unnecessary system apps (e.g., AudioFX)
+PRODUCT_PACKAGES += \
+    RemovePackages
