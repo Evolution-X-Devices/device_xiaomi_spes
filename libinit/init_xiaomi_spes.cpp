@@ -23,20 +23,6 @@ static const variant_info_t spes_info = {
     .nfc = false,
 };
 
-static const variant_info_t spes_in_info = {
-    .hwc_value = "India",
-    .sku_value = "k7tin",
-
-    .brand = "Redmi",
-    .device = "spes",
-    .marketname = "Redmi Note 11",
-    .model = "2201117TI",
-    .name = "spes_global",
-    .build_fingerprint = "Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.7.0.TGCMIXM:user/release-keys",
-
-    .nfc = false,
-};
-
 static const variant_info_t spesn_info = {
     .hwc_value = "",
     .sku_value = "k7tn",
@@ -53,7 +39,6 @@ static const variant_info_t spesn_info = {
 
 static const std::vector<variant_info_t> variants = {
     spes_info,
-    spes_in_info,
     spesn_info,
 };
 
