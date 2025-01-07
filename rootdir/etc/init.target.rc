@@ -132,6 +132,7 @@ on boot
     write /sys/module/cpu_boost/parameters/input_boost_ms 120
 
     # DT2W
+    write /sys/touchpanel/double_tap 1
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
 
