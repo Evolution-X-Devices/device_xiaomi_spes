@@ -115,8 +115,8 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=930|150
 persist.vendor.fingerprint.sensor_modules=fpc,goodix
+persist.vendor.fingerprint.sensor_location=1080|930|150|local:4630946773257169537,1080|930|150|local:4630946616659355009
 
 # Fling Velocity
 ro.min.fling_velocity=160
