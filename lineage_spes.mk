@@ -26,13 +26,18 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Boot Animaton
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# EvoX Stuff
+# risingOS Stuff
 WITH_GMS := true
-EVO_BUILD_TYPE = Unofficial
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-BUILD_SEEDVAULT := false
-BUILD_BCR := true
+TARGET_CORE_GMS := true
+TARGET_INCLUDE_GOOGLE_DIALER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := false
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="spes_global-user 13 TKQ1.221114.001 V816.0.8.0.TGCMIXM release-keys" \
+    BuildFingerprint=Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.8.0.TGCMIXM:user/release-keys \
+    RisingChipset="Qualcomm Snapdragon 680" \
+    RisingMaintainer="@spesmynuts"
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage

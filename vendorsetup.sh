@@ -5,7 +5,7 @@ YELLOW="\033[1;33m"
 END="\033[0m"
 
 VENDOR_BRANCH="15.0"
-KERNEL_BRANCH="NaughtySilver"
+KERNEL_BRANCH="15.0"
 HARDWARE_BRANCH="15.0"
 DEBUG_BRANCH="lineage-22"
 LEICA_CAMERA_BRANCH="leica-5.0"
@@ -32,18 +32,18 @@ else
 fi
 
 if check_dir vendor/xiaomi/spes; then
-    echo -e "${GREEN}Cloning vendor sources from EvolutionX-spes (branch: ${YELLOW}$VENDOR_BRANCH${GREEN})...${END}"
-    git clone https://github.com/EvolutionX-spes/vendor_xiaomi_spes -b $VENDOR_BRANCH vendor/xiaomi/spes
+    echo -e "${GREEN}Cloning vendor sources from nexys-playground (branch: ${YELLOW}$VENDOR_BRANCH${GREEN})...${END}"
+    git clone https://github.com/nexy-s-playground/vendor_xiaomi_spes -b $VENDOR_BRANCH vendor/xiaomi/spes
 fi
 
 if check_dir kernel/xiaomi/sm6225; then
-    echo -e "${GREEN}Cloning kernel sources from EvolutionX-spes (branch: ${YELLOW}$KERNEL_BRANCH${GREEN})...${END}"
-    git clone https://github.com/EvolutionX-spes/kernel_xiaomi_sm6225 --depth=1 -b $KERNEL_BRANCH kernel/xiaomi/sm6225
+    echo -e "${GREEN}Cloning kernel sources from spes-development (branch: ${YELLOW}$KERNEL_BRANCH${GREEN})...${END}"
+    git clone https://github.com/spes-development/kernel_xiaomi_sm6225 --depth=1 -b $KERNEL_BRANCH kernel/xiaomi/sm6225
 fi
 
 if check_dir hardware/xiaomi; then
     echo -e "${GREEN}Cloning hardware sources from spes-development (branch: ${YELLOW}$HARDWARE_BRANCH${GREEN})...${END}"
-    git clone https://github.com/crdroidandroid/android_hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
+    git clone https://github.com/spes-development/hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
 fi
 
 if check_dir hardware/samsung-ext/interfaces; then
