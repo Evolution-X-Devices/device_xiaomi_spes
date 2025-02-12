@@ -43,7 +43,7 @@ fi
 
 if check_dir hardware/xiaomi; then
     echo -e "${GREEN}Cloning hardware sources from spes-development (branch: ${YELLOW}$HARDWARE_BRANCH${GREEN})...${END}"
-    git clone https://github.com/spes-development/hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
+    git clone https://github.com/crdroidandroid/android_hardware_xiaomi -b $HARDWARE_BRANCH hardware/xiaomi
 fi
 
 if check_dir hardware/samsung-ext/interfaces; then
