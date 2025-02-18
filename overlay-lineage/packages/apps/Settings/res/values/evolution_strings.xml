@@ -5,6 +5,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About device screen, build maintainer -->
-    <string name="build_maintainer_summary">тαиνir</string>
-    <string name="build_maintainer_donate_url">https://github.com/tanvirr007</string>
+    <string name="build_maintainer_summary">@spesmynuts x yograt</string>
+    <string name="build_maintainer_donate_url">https://github.com/Evolution-X</string>
 </resources>
