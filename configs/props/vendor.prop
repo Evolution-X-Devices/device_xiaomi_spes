@@ -2,6 +2,7 @@
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=1
+audio.deep_buffer.media=true
 persist.vendor.audio.avs.afe_api_version=2
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
