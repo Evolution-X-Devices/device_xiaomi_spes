@@ -95,6 +95,26 @@
 
     <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
     <integer name="config_aodMaxRefreshRate">60</integer>
+    <!--  Flag to turn on the rendering of the above path or not  -->
+    <bool name="config_enableDisplayCutoutProtection">true</bool>
+
+    <!-- A path similar to frameworks/base/core/res/res/values/config.xml
+      config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a display
+      cutout. If present as well as config_enableDisplayCutoutProtection is set to true, then
+      SystemUI will draw this "protection path" instead of the display cutout path that is normally
+      used for anti-aliasing.
+      This path will only be drawn when the front-facing camera turns on, otherwise the main
+      DisplayCutout path will be rendered
+       -->
+    <string name="config_frontBuiltInDisplayCutoutProtection" translatable="false">
+        M 540,0
+        m -36,52
+        a 36,36 0 1,0 72,0
+        a 36,36 0 1,0 -72,0
+    </string>
+
+    <!--  ID for the camera that needs extra protection -->
+    <string name="config_protectedCameraId" translatable="false">1</string>
 
     <!-- Whether to play turbulence noise after clicking the play button --> 
     <bool name="config_turbulenceNoise">false</bool>
