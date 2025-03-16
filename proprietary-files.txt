@@ -504,7 +504,7 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
-system/bin/charger:system/bin/chargeonlymode
+system/bin/charger:system/bin/chargeonlymode;FIX_SONAME;DISABLE_CHECKELF
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
@@ -1006,13 +1006,13 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
-vendor/bin/STFlashTool
+vendor/bin/STFlashTool;DISABLE_CHECKELF
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/st21nfc_conf.txt
 vendor/lib/libsn100u_fw.so
 vendor/lib64/libst_sr_models.so
-vendor/lib64/libstfactory-vendor.so
+vendor/lib64/libstfactory-vendor.so;DISABLE_CHECKELF
 vendor/lib64/nfc_nci.st21nfc.st.so
 
 # NFC Firmware
