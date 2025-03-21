@@ -112,8 +112,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest-lineage.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix-lineage.xml
 endif
-ODM_MANIFEST_SKUS += k7tn
-ODM_MANIFEST_K7TN_FILES := $(DEVICE_PATH)/configs/hidl/manifest_k7tn.xml
 
 # IMS
 BOARD_USES_LEGACY_IMS_SEPOLICY := true
