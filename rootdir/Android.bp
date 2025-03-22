@@ -45,6 +45,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+      name: "init.spes.rc",
+      src: "etc/init.spes.rc",
+      sub_dir: "init",
+      vendor: true,
+  }
+
+prebuilt_etc {
     name: "init.qcom.usb.rc",
     src: "etc/init.qcom.usb.rc",
     sub_dir: "init/hw",
