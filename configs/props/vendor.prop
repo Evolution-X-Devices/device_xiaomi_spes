@@ -233,6 +233,10 @@ telephony.lteOnCdmaDevice=1
 # QSPM
 ro.vendor.qspm.enable=true
 
+# Reduce boot time
+ro.config.hw_quickpoweron=true
+ro.config.hw_quickpoweron_init=true
+
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
