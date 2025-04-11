@@ -9,6 +9,7 @@ KERNEL_BRANCH="15.0"
 HARDWARE_BRANCH="15.0"
 DEBUG_BRANCH="lineage-22"
 LEICA_CAMERA_BRANCH="leica-5.0"
+KEYS_BRANCH="master"
 
 check_dir() {
     if [ -d "$1" ]; then
@@ -54,6 +55,11 @@ fi
 if check_dir vendor/xiaomi/miuicamera; then
     echo -e "${GREEN}Cloning Leica Camera vendor sources from ItzDFPlayer (branch: ${YELLOW}$LEICA_CAMERA_BRANCH${GREEN})...${END}"
     git clone https://gitlab.com/ItzDFPlayer/vendor_xiaomi_miuicamera -b $LEICA_CAMERA_BRANCH vendor/xiaomi/miuicamera
+fi
+
+if check_dir vendor/mine/keys; then
+    echo -e "${GREEN}Cloning Signed Keys from(branch: ${YELLOW}$KEYS_BRANCH${GREEN})...${END}"
+    git clone https://github.com/spesmynuts/priv_keys -b $KEYS_BRANCH vendor/mine/keys
 fi
 
 echo -e "${YELLOW}All patches have been successfully applied; your device sources are now ready!${END}"
