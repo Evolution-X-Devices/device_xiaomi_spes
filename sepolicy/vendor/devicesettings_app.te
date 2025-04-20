@@ -3,6 +3,7 @@ r_dir_file(devicesettings_app, vendor_sysfs_graphics)
 
 allow devicesettings_app {
     vendor_sysfs_graphics
+    sysfs_msm_subsys
 }:dir search;
 
 allow devicesettings_app {
@@ -17,3 +18,4 @@ allow devicesettings_app proc_stat:file { read open getattr };
 
 allow devicesettings_app vendor_sysfs_kgsl_gpuclk:file { read open getattr };
 allow devicesettings_app vendor_sysfs_kgsl:file { read open getattr };
+allow devicesettings_app sysfs_msm_subsys:file r_file_perms;
