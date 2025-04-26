@@ -246,6 +246,8 @@ persist.vendor.sensors.enable.bypass_worker=true
 persist.vendor.sensors.enable.rt_task=false
 persist.vendor.sensors.hal_trigger_ssr=false
 persist.vendor.sensors.support_direct_channel=false
+ro.vendor.sensors.xiaomi.double_tap=true
+ro.vendor.sensors.xiaomi.single_tap=true
 
 # Soundtrigger
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=31

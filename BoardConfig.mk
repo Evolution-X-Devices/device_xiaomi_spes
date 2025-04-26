@@ -153,6 +153,9 @@ BOARD_KERNEL_CMDLINE += \
     kpti=off \
     kasan=off
 
+BOARD_KERNEL_CMDLINE +=  init.is_dt2w_sensor=1
+BOARD_KERNEL_CMDLINE +=  init.is_st2w_sensor=1
+
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225
