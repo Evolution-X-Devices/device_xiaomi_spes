@@ -397,7 +397,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-evolution
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
@@ -597,6 +598,7 @@ $(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
 # Include Leica//Miui Camera
 $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+$(call soong_config_set,camera,package_name,com.android.camera)
 
 # Remove unnecessary system apps (e.g., AudioFX)
 PRODUCT_PACKAGES += \
