@@ -14,9 +14,6 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 # Inherit some common Pixel Project stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit Xiaomi Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # Product Specifics
 PRODUCT_NAME := aosp_spes
 PRODUCT_DEVICE := spes

@@ -9,7 +9,6 @@ KERNEL_BRANCH="15.0"
 HARDWARE_BRANCH="15.0"
 DEBUG_BRANCH="lineage-22"
 LEICA_CAMERA_BRANCH="leica-5.0"
-DOLBY_HARDWARE_BRANCH="15"
 
 check_dir() {
     if [ -d "$1" ]; then
@@ -55,11 +54,6 @@ fi
 if check_dir vendor/xiaomi/miuicamera; then
     echo -e "${GREEN}Cloning Leica Camera vendor sources from ItzDFPlayer (branch: ${YELLOW}$LEICA_CAMERA_BRANCH${GREEN})...${END}"
     git clone https://gitlab.com/ItzDFPlayer/vendor_xiaomi_miuicamera -b $LEICA_CAMERA_BRANCH vendor/xiaomi/miuicamera
-fi
-
-if check_dir hardware/dolby; then
-    echo -e "${GREEN}Cloning Dolby sources from dkpost3 (branch: ${YELLOW}$DOLBY_HARDWARE_BRANCH${GREEN})...${END}"
-    git clone https://github.com/Pong-Development/hardware_dolby -b $DOLBY_HARDWARE_BRANCH hardware/dolby
 fi
 
 echo -e "${YELLOW}All patches have been successfully applied; your device sources are now ready!${END}"
