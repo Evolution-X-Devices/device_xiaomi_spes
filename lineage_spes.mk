@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Product Specifics
-PRODUCT_NAME := aosp_spes
+PRODUCT_NAME := lineage_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -26,15 +26,12 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Boot Animaton
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# The Pixel Project Stuff
-CUSTOM_BUILD_TYPE := OFFICIAL
+# EvolutionX Stuff
+EVO_BUILD_TYPE := Beta
 WITH_GMS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_STOCK_AICORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-CUSTOM_MAINTAINER := Yogratdesuyo
+TARGET_INCLUDE_GOOGLE_DIALER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_HAS_UDFPS := false
 TARGET_ENABLE_BLUR := true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="spes_global-user 13 TKQ1.221114.001 V816.0.8.0.TGCMIXM release-keys" \
