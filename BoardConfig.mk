@@ -123,7 +123,7 @@ endif
 BOARD_USES_LEGACY_IMS_SEPOLICY := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_spes
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):init_xiaomi_spes)
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_spes
 
 # Kernel
