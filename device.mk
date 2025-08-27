@@ -610,3 +610,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/refreshrate/privapp-permissions-refresh-rate-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-refresh-rate-parts.xml
+
+# Execute vendorsetup.sh during launch
+_IGNORED := $(shell bash device/xiaomi/spes/vendorsetup.sh)
