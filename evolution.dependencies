@@ -1,7 +1,7 @@
 [
   {
     "repository": "vendor_xiaomi_spes",
-    "target_path": "vendor/xiaomi/spes"
+    "target_path": "vendor/xiaomi/spes",
     "branch": "vic"
   },
   {
