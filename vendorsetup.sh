@@ -1,5 +1,8 @@
 #!/bin/bash
 # Cleanup script to avoid build conflicts
+check_dir() {
+    [ ! -d "$1" ]
+}
 LINEAGE_SEPOLICY_COMMON_VENDOR_DEVICE="device/lineage/sepolicy/common/vendor/device.te"
 QTI_KERNEL_HEADER_LINEAGE="vendor/lineage/build/soong/Android.bp"
 LEICA_CAMERA_BRANCH="leica-5.0"
