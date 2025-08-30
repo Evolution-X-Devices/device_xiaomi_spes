@@ -596,10 +596,6 @@ PRODUCT_PACKAGES += \
 # Include debug tool
 $(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
-# Include Leica//Miui Camera
-$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
-$(call soong_config_set,camera,package_name,com.android.camera)
-
 # Remove unnecessary system apps (e.g., AudioFX)
 PRODUCT_PACKAGES += \
     RemovePackages
@@ -611,5 +607,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/refreshrate/privapp-permissions-refresh-rate-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-refresh-rate-parts.xml
 
-# Execute vendorsetup.sh during launch
+# Execute vendorsetup.sh during lunch
 _IGNORED := $(shell bash device/xiaomi/spes/vendorsetup.sh)
