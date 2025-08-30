@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common Pixel Project stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Product Specifics
 PRODUCT_NAME := lineage_spes
