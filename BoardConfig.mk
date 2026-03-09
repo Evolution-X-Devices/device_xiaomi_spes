@@ -282,5 +282,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit from the proprietary version
 include vendor/xiaomi/spes/BoardConfigVendor.mk
 
-# Include debug tool
-include hardware/samsung-ext/interfaces/sepolicy/SEPolicy.mk
+# Don't Include debug tool for now
+# include hardware/samsung-ext/interfaces/sepolicy/SEPolicy.mk

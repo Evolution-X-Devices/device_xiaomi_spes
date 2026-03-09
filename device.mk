@@ -593,8 +593,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
-# Include debug tool
-$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
+# Don't Include debug tool anymore
+# $(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
 # Remove unnecessary system apps (e.g., AudioFX)
 PRODUCT_PACKAGES += \
@@ -609,3 +609,6 @@ PRODUCT_COPY_FILES += \
 
 # Execute vendorsetup.sh during lunch
 _IGNORED := $(shell bash device/xiaomi/spes/vendorsetup.sh)
+# Include Leica//Miui Camera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+$(call soong_config_set,camera,package_name,com.android.camera)
