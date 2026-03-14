@@ -4,7 +4,6 @@ check_dir() {
     [ ! -d "$1" ]
 }
 LINEAGE_SEPOLICY_COMMON_VENDOR_DEVICE="device/lineage/sepolicy/common/vendor/device.te"
-QTI_KERNEL_HEADER_LINEAGE="vendor/lineage/build/soong/Android.bp"
 LEICA_CAMERA_BRANCH="leica-5.0"
 DEVICE_MK_PATH="device/xiaomi/spes/device.mk"
 LEICA_CAMERA_BLOCK=$(cat <<'EOF'
@@ -19,12 +18,6 @@ EOF
 if [ -f "$LINEAGE_SEPOLICY_COMMON_VENDOR_DEVICE" ]; then
     echo "Deleting $LINEAGE_SEPOLICY_COMMON_VENDOR_DEVICE to avoid build conflict..."
     rm -f "$LINEAGE_SEPOLICY_COMMON_VENDOR_DEVICE"
-fi
-
-# Remove duplicate qti_kernel_headers block from Android.bp
-if [ -f "$QTI_KERNEL_HEADER_LINEAGE" ]; then
-    echo "Cleaning lines 97–101 from $QTI_KERNEL_HEADER_LINEAGE to avoid build conflict..."
-    sed -i '97,101d' "$QTI_KERNEL_HEADER_LINEAGE"
 fi
 
 # Clone vendor/xiaomi/miuicamera during lunch
