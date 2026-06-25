@@ -234,9 +234,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.qcom
 
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Dolby
 TARGET_EXCLUDES_AUDIOFX := true
 
