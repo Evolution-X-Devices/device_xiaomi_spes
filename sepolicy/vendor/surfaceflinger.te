@@ -1,2 +1,5 @@
 allow surfaceflinger vendor_firmware_file:dir { getattr open read search };
 allow surfaceflinger sysfs_msm_subsys:dir search;
+
+# ION
+allow surfaceflinger ion_device:chr_file { read open ioctl };

@@ -21,3 +21,6 @@ allow hal_sensors_default sysfs:file { read write };
 allow hal_sensors_default system_server:binder call;
 
 get_prop(hal_sensors_default, vendor_adsprpc_prop)
+
+# ION
+allow hal_sensors_default ion_device:chr_file { read open ioctl };

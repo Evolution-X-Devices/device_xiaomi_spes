@@ -1,0 +1,2 @@
+# ION
+allow vendor_hal_drm_widevine ion_device:chr_file { read open ioctl };
