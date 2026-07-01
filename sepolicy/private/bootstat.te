@@ -1,0 +1,2 @@
+binder_use(bootstat)
+hal_client_domain(bootstat, hal_health)

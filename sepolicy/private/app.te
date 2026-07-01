@@ -1,0 +1,5 @@
+# Inherited zygote socket
+allow appdomain zygote:unix_stream_socket getopt;
+
+# ION
+allow { appdomain -isolated_app_all } ion_device:chr_file r_file_perms;

@@ -1,0 +1,1 @@
+allow zygote proc_pid_max:file r_file_perms;
