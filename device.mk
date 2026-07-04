@@ -517,6 +517,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+PRODUCT_DEX_PREOPT_MODULE_CONFIGS += qti-telephony-common=disable
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
