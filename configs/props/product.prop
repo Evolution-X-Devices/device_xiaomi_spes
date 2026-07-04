@@ -74,3 +74,8 @@ ro.ril.fast.dormancy.timeout=3
 ro.mot.eri.losalert.delay=100
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
+
+# Usb debugging enable
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
