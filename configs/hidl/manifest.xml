@@ -298,4 +298,8 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::IGoogleBattery/default</fqname>
     </hal>
+    <hal format="aidl" override="true">
+         <name>android.hardware.nfc</name>
+         <fqname>INfc/default</fqname>
+     </hal>
 </manifest>
