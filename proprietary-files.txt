@@ -1,4 +1,7 @@
-# All unpinned blobs below are extracted from spesn_eea_global_images_OS1.0.11.0.TGKEUXM_20250324.0000.00_13.0_eea_aa692107e0
+# All unpinned blobs below are extracted from spesnid_images_OS1
+
+# Protobuf
+vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
