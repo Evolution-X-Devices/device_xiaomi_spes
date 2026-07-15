@@ -1,7 +1,7 @@
 [
   {
     "repository": "vendor_xiaomi_spes",
-    "target_path": "vendor/xiaomi/spes"
+    "target_path": "vendor/xiaomi/spes",
     "branch": "cnb"
   },
   {
@@ -13,7 +13,7 @@
     "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "remote": "github-non-los",
-    "branch": "lineage-24"
+    "branch": "lineage-23.2"
   },
   {
     "repository": "Roynas-Android-Playground/hardware_samsung-extra_interfaces",
