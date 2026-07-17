@@ -106,11 +106,12 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
-    android.hardware.soundtrigger@2.3-impl
+   android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -239,7 +240,8 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
-    libvulkan
+    libvulkan \
+    libwfdaac_vendor
 
 PRODUCT_PACKAGES += \
     gralloc.qcom
@@ -252,7 +254,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey \
-    libcrypto-v33
+    libcrypto-v33 \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -414,11 +418,13 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     android.hardware.power-service.lineage-libperfmgr \
-    libqti-perfd-client
+    libqti-perfd-client \
+    libperfmgr
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
-    hardware/google/pixel \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client
 
@@ -455,8 +461,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl \
     libxml2
 
@@ -575,3 +579,4 @@ PRODUCT_COPY_FILES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
