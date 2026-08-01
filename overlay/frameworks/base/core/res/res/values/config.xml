@@ -873,7 +873,7 @@
 
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
-    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+    <bool name="config_deviceSupportsHighPerfTransitions">true</bool>
 
     <!-- Flag indicating whether the surface flinger is inefficient
         at performing a blur.  Used by parts of the UI to turn off
