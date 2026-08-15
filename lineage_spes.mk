@@ -30,9 +30,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 EVO_BUILD_TYPE := Official
 TARGET_ENABLE_BLUR := true
 
-# Disable EPPE
-TARGET_DISABLE_EPPE := true
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 

@@ -39,4 +39,9 @@
     <dimen name="rounded_corner_radius_top">106.0px</dimen>
     <dimen name="rounded_corner_radius_top_adjustment">5px</dimen>
 
+    <!-- Cross-window blur radius for the system framework -->
+    <dimen name="config_windowBlurRadius">14dp</dimen>
+    <dimen name="config_crossWindowBlurRadius">14dp</dimen>
+    <dimen name="config_maxCrossWindowBlurRadius">14dp</dimen>
+
 </resources>

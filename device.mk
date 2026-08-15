@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1 \
+
 # Camera
 PRODUCT_PACKAGES += \
     libutilscallstack.vendor \
@@ -323,8 +327,6 @@ PRODUCT_PACKAGES += \
 
 # Lineage Health
 $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
 
 # Shims
 PRODUCT_PACKAGES += \
