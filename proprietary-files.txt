@@ -307,12 +307,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libopencv.so
 -vendor/lib64/libopestriping.so
 -vendor/lib64/libsdk_sr.so
--vendor/lib64/libsns_device_mode_stub.so
--vendor/lib64/libsns_fastRPC_util.so
--vendor/lib64/libsns_low_lat_stream_stub.so
 -vendor/lib64/libsns_registry_skel.so
--vendor/lib64/libsnsapi.so
--vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libswregistrationalgo.so
 -vendor/lib64/libswvdec.so
 -vendor/lib64/libtfestriping.so
@@ -607,7 +602,6 @@ vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml
 -vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
 -vendor/lib64/libdisp-aba.so
--vendor/lib64/libdpps.so
 -vendor/lib64/vendor.display.color@1.0.so
 -vendor/lib64/vendor.display.color@1.1.so
 -vendor/lib64/vendor.display.color@1.2.so
