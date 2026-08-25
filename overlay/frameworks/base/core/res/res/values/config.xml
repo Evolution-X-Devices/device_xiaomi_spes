@@ -873,6 +873,7 @@
     
     <!-- Enable blur by default -->
     <bool name="config_windowBlursEnabled">true</bool>
+    <bool name="config_enableCrossWindowBlur">true</bool>
 
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
