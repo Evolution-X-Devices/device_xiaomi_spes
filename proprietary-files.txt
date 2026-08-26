@@ -623,7 +623,6 @@ system_ext/framework/dpmapi.jar
 -system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
 -system_ext/lib/libdpmctmgr.so
 -system_ext/lib/libdpmfdmgr.so
--system_ext/lib/libdpmframework.so
 -system_ext/lib/libdpmtcm.so
 -system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 -system_ext/lib64/libdpmctmgr.so
