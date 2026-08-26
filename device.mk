@@ -334,6 +334,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # Lineage Health
 $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
