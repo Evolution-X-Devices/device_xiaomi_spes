@@ -41,14 +41,4 @@
     <string name="hbm_mode_title">High Brightness Mode</string>
     <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value. Which helps in improving visibility in direct sunlight</string>
     <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
-
-    <!-- GameBar Overlay -->
-    <string name="game_overlay_title">GameBar</string>
-    <string name="game_overlay_summary">Enable the system overlay (FPS, Temp, etc.)</string>
-    <string name="overlay_permission_required">Overlay permission is required</string>
-    <string name="overlay_permission_granted">Overlay permission granted</string>
-    <string name="overlay_permission_denied">Overlay permission denied</string>
-    <string name="game_overlay_tile_label">GameBar</string>
-    <string name="game_overlay_tile_description">Toggle the game overlay</string>
 </resources>
-
