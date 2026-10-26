@@ -16,20 +16,16 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/pixelos/pixel-clocks/common
-
-
-
 # Product Specifics
 PRODUCT_NAME := Lineage_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# EvolutionX Flags
+EVO_BUILD_TYPE := Official
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="spes_global-user 13 TKQ1.221114.001 V816.0.11.0.TGKMIXM release-keys" \
